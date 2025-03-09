@@ -1,0 +1,28 @@
+.title {
+    color: red; 
+  }
+  
+  .child .title {
+    color: blue; 
+  }
+  
+  .child p {
+    color: green; 
+  }
+  
+  div.title {
+    color: green; 
+  }
+  .box {
+    width: 400px; /* التأكد من أن العرض لا يزيد عن 400px */
+    background-color: brown; /* اللون البني كخلفية */
+    color: white; /* لون النص */
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap; /* منع النص من الانتقال للسطر الجديد */
+    overflow: hidden; /* إخفاء أي جزء زائد من النص */
+    text-overflow: ellipsis; /* عرض "..." عند القطع */
+  }
+  
+  
