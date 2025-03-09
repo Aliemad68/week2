@@ -1,0 +1,87 @@
+.shape {
+    width: 200px;
+    height: 150px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    border: 5px solid black;
+  }
+  
+  
+  .shape-1 {
+    box-shadow: inset 0 0 0 5px red;
+  }
+  
+
+  .shape-2 {
+    box-shadow: inset 5px 0 green, inset -5px 0 green, 
+                inset 0 5px blue, inset 0 -5px blue;
+  }
+  
+ 
+  .shape-3 {
+    border-image: linear-gradient(to right, red 25%, yellow 25%, yellow 50%, green 50%, green 75%, blue 75%) 5;
+    border-style: solid;
+  }
+  .element {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 10px auto;
+}
+
+.element-1 {
+  background-color: red;
+  color: white;
+}
+
+.element-2 {
+  visibility: hidden; /* يخفي العنصر لكن يحافظ على مكانه */
+}
+
+.element-3 {
+  background-color: blue;
+  color: white;
+}
+.element {
+    width: 400px;
+    padding: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    background-color: #eee; 
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .element::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .element-1::before {
+    background-color: #d81b60; 
+  }
+  
+  .element-2 {
+    visibility: hidden; 
+  }
+  
+  .element-3::before {
+    background-color: #00897b; 
+  }
+  
