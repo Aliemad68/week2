@@ -1,0 +1,63 @@
+/* class "title" */
+.title {
+}
+
+/*(ID) "nav" */
+#nav {
+}
+
+/* جميع العناصر من نوع <div> في الصفحة */
+div {
+}
+
+/* جميع العناوين من المستوى الثاني <h2> في الصفحة */
+h2 {
+}
+/* Valid */  
+._user-name {
+}
+
+/* Not Valid (لا يمكن أن يبدأ الـ ID أو الـ Class بشرطة `-`) */  
+.-user-name {
+}
+
+/* Not Valid (لا يمكن أن يبدأ برقم) */  
+.1user-name {
+}
+
+/* Not Valid (لا يمكن أن يحتوي على `@` في البداية) */  
+.@user-name {
+}
+
+/* Not Valid (لا يمكن أن يحتوي على `@` داخل الاسم) */  
+.user@name {
+}
+
+/* Valid */  
+._user10name {
+}
+
+/* Valid */  
+.u {
+}
+/* Bad (استخدام الأحرف الكبيرة لا يتبع أفضل الممارسات في CSS) */  
+.USERNAME {
+}
+
+/* Bad (استخدام PascalCase غير شائع في CSS، يُفضل استخدام kebab-case أو camelCase) */  
+.UserName {
+}
+
+/* Good (استخدام kebab-case هو الأفضل والأكثر شيوعًا في CSS) */  
+.user-name {
+}
+
+/* Good (camelCase مقبول ولكنه أقل شيوعًا من kebab-case في CSS) */  
+.userName {
+}
+
+/* Bad (اسم طويل بدون فواصل، مما يجعل قراءته صعبة) */  
+.usernameprofile {
+}
+
+
