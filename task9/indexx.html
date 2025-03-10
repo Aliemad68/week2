@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراكب العناصر</title>
+    <style>
+        /* تنسيق الصفحة لتوسيط العنصر الرئيسي */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        /* تنسيق العنصر الرئيسي */
+        div {
+            position: relative;
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* تنسيق الأرقام في الزوايا */
+        span {
+            position: absolute;
+            background-color: red;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 14px;
+        }
+
+        .top-left {
+            top: -10px;
+            left: -10px;
+        }
+
+        .bottom-left {
+            bottom: -10px;
+            left: -10px;
+        }
+
+        .top-right {
+            top: -10px;
+            right: -10px;
+        }
+
+        .bottom-right {
+            bottom: -10px;
+            right: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+        similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+        laudantium mollitia atque! Laborum ea nam doloribus.
+        <span class="top-left">1</span>
+        <span class="bottom-left">2</span>
+        <span class="top-right">3</span>
+        <span class="bottom-right">4</span>
+    </div>
+
+</body>
+</html>

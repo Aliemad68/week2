@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatted List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .section {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ol li, ul li {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            display: block;
+            width: fit-content;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section">HTML</div>
+<ol>
+    <li>Slim</li>
+    <li>Pugjs</li>
+    <li>HAML</li>
+</ol>
+
+<div class="section">CSS</div>
+<ol>
+    <li>SASS</li>
+    <li>LESS</li>
+    <li>PostCSS</li>
+</ol>
+
+<div class="section">JavaScript</div>
+<ul>
+    <li>Vuejs</li>
+    <li>Sveltejs</li>
+</ul>
+
+</body>
+</html>
