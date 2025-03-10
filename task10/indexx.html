@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Div</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            background-color: #D3D3D3;
+            width: 600px;
+            height: 100px;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        div::before {
+            content: "1";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            width: 70px;
+            height: 100%;
+            position: absolute;
+            left: -70px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>Hello, Welcome To Elzero Web School</div>
+
+</body>
+</html>

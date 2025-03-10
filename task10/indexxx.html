@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        .product-container {
+            display: flex;
+            align-items: center;
+            background-color: #E0E0E0;
+            width: 500px;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .number {
+            background-color: #F44336;
+            color: white;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .product-title {
+            margin-left: 15px;
+            flex-grow: 1;
+        }
+
+        .product-container::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #F44336;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="number">1</div>
+        <div class="product-title">This Is Very Very Long Product Title</div>
+    </div>
+
+    <div class="product-container">
+        <div class="number">2</div>
+        <div class="product-title">This Is Very Very Long Product Title</div>
+    </div>
+
+    <div class="product-container">
+        <div class="number">3</div>
+        <div class="product-title">This Is Very Very Long Product Title</div>
+    </div>
+
+    <div class="product-container">
+        <div class="number">4</div>
+        <div class="product-title">This Is Very Very Long Product Title</div>
+    </div>
+
+</body>
+</html>

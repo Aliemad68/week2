@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Comments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        .comment-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            background-color: #D3D3D3;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .comment {
+            background-color: #D3D3D3;
+            padding: 15px;
+            font-size: 18px;
+            width: 400px;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .comment::before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent #E91E63 transparent transparent;
+        }
+
+        .comment::after {
+            content: "";
+            position: absolute;
+            left: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent white transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="comment-container">
+        <div class="name">Osama</div>
+        <div class="comment">This Is Very Very Long Comment Number One</div>
+    </div>
+
+    <div class="comment-container">
+        <div class="name">Ahmed</div>
+        <div class="comment">This Is Very Very Long Comment Number Two</div>
+    </div>
+
+    <div class="comment-container">
+        <div class="name">Sayed</div>
+        <div class="comment">This Is Very Very Long Comment Number Three</div>
+    </div>
+
+</body>
+</html>
