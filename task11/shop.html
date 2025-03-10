@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Comparison</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .pricing-box {
+            width: 250px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .pricing-box h2 {
+            background: #2196F3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px auto;
+        }
+        .pricing-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+        .or-divider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .or-divider span {
+            background: #2196F3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        .divider-line {
+            width: 2px;
+            height: 100px;
+            background: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-wrapper">
+            <div class="pricing-box">
+                <h2>Basic</h2>
+                <div class="circle">Free</div>
+            </div>
+            <div class="or-divider">
+                <div class="divider-line"></div>
+                <span>Or</span>
+                <div class="divider-line"></div>
+            </div>
+            <div class="pricing-box">
+                <h2>Pro</h2>
+                <div class="circle">$30</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

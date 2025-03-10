@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Elements</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .circle-wrapper {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+
+        .circle-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .blue-circle {
+            background-color: #2196F3;
+            top: 10px;
+            left: 10px;
+        }
+
+        .pink-circle {
+            background-color: #E91E63;
+            top: -10px;
+            left: -10px;
+        }
+
+        .white-circle {
+            background-color: #EEEEEE;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="circle-wrapper">
+            <div class="circle-bg blue-circle"></div>
+            <div class="circle-bg pink-circle"></div>
+            <div class="white-circle">Element</div>
+            <div class="number">1</div>
+        </div>
+
+        <div class="circle-wrapper">
+            <div class="circle-bg blue-circle"></div>
+            <div class="circle-bg pink-circle"></div>
+            <div class="white-circle">Element</div>
+            <div class="number">2</div>
+        </div>
+
+        <div class="circle-wrapper">
+            <div class="circle-bg blue-circle"></div>
+            <div class="circle-bg pink-circle"></div>
+            <div class="white-circle">Element</div>
+            <div class="number">3</div>
+        </div>
+    </div>
+
+</body>
+</html>
